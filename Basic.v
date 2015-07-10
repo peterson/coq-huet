@@ -106,31 +106,3 @@ forall m : nat, m > 0
 
 (* Use the below command in interactive-mode only! *)
 (* Reset Declaration. *)
-
-(** Minimal Logic **)
-Section Minimal_Logic.
-Variables A B C : Prop.
-
-Check (A->B).
-(*
-Result:
-
-A -> B
-     : Prop
-*)
-
-(* A simple proof ... *)
-Goal (A -> B -> C) -> (A -> B) -> A -> C.
-(*
-Result:
-
-1 subgoal
-
-  n : nat
-  Pos_n : n > 0
-  A : Prop
-  B : Prop
-  C : Prop
-  ============================
-   (A -> B -> C) -> (A -> B) -> A -> C
-*)
